@@ -3,6 +3,10 @@ from airflow.operators.python import PythonOperator
 
 from datetime import datetime
 
+default_args = {
+    'retries': 3,
+}
+
 def print_a():
     print('hi from task a')
 
@@ -14,6 +18,7 @@ with DAG(
     description="A simple Tutorial DAG",
     tags=['data_science'],
     start_date=datetime(2023,5,1),
+    default_args=default_args,
     schedule="@daily",
     catchup=False
     ) as dag:
