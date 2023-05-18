@@ -37,7 +37,7 @@ with DAG('ml_dag', start_date=datetime(2022, 1, 1),
 
     report = BashOperator(
        task_id='report',
-       bash_command='echo "hello world"'
+       bash_command='echo "report_{{ var.value.ml_report_name }}"'
        )
 
 ml_tasks>>report
