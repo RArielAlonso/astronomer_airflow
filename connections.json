@@ -1,0 +1,22 @@
+{
+  "calendar_api": {
+    "conn_type": "http",
+    "description": "",
+    "login": "Admin",
+    "password": "Kazuo251825",
+    "host": "https://calendarific.com/api/v2",
+    "port": null,
+    "schema": "",
+    "extra": ""
+  },
+  "http_default": {
+    "conn_type": "http",
+    "description": "",
+    "login": "",
+    "password": null,
+    "host": "swapi.dev/api/",
+    "port": null,
+    "schema": "https",
+    "extra": ""
+  }
+}
